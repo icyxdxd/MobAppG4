@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobAppG4.Views.HomePage"
+    BackgroundColor="White"
+    Title="Home">
+
+    <VerticalStackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        Spacing="25">
+
+        <Label 
+            Text="Welcome to ManoMano"
+            FontSize="28"
+            FontAttributes="Bold"
+            TextColor="#E0A800"
+            HorizontalTextAlignment="Center" />
+
+        <Button 
+            Text="Log Out"
+            BackgroundColor="#FF5252"
+            TextColor="White"
+            FontAttributes="Bold"
+            HeightRequest="45" 
+            Clicked="OnLogoutClicked"/>
+    </VerticalStackLayout>
+</ContentPage>

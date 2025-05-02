@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobAppG4.Views.LoginPage"
+    BackgroundColor="#FFF8E1"
+    Title="Mano Mano Login">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="20"
+            WidthRequest="300">
+
+            <Label 
+                Text="ManoMano"
+                FontSize="32"
+                FontAttributes="Bold"
+                TextColor="#E0A800"
+                HorizontalOptions="Center" />
+
+            <Entry 
+                x:Name="emailEntry"
+                Placeholder="Email"
+                Keyboard="Email"
+                BackgroundColor="#F5F5F5"
+                HeightRequest="45" />
+
+            <Entry 
+                x:Name="passwordEntry"
+                Placeholder="Password"
+                IsPassword="True"
+                BackgroundColor="#F5F5F5"
+                HeightRequest="45" />
+
+            <Button 
+                Text="Log In"
+                Clicked="OnLoginClicked"
+                BackgroundColor="#FFC107"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="45" />
+
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
