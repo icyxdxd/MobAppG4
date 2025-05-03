@@ -27,4 +27,10 @@ public partial class LoginPage : ContentPage
             await DisplayAlert("Login Failed", ex.Message, "OK");
         }
     }
+
+    private async void OnRegisterClicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new RegisterPage());
+    }
+
 }

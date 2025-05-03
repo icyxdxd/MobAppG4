@@ -31,6 +31,7 @@
                 x:Name="emailEntry"
                 Placeholder="Email"
                 Keyboard="Email"
+                TextColor="#000"
                 BackgroundColor="#F5F5F5"
                 HeightRequest="45" />
 
@@ -38,6 +39,7 @@
                 x:Name="passwordEntry"
                 Placeholder="Password"
                 IsPassword="True"
+                TextColor="#000"
                 BackgroundColor="#F5F5F5"
                 HeightRequest="45" />
 
@@ -48,6 +50,17 @@
                 TextColor="White"
                 FontAttributes="Bold"
                 HeightRequest="45" />
+
+            <Button 
+                Text="Register"
+                Clicked="OnRegisterClicked"
+                BackgroundColor="#E0A800"
+                TextColor="White"
+                FontAttributes="Bold"
+                HeightRequest="40"
+                FontSize="14"
+                CornerRadius="8" />
+
 
         </VerticalStackLayout>
     </Grid>
