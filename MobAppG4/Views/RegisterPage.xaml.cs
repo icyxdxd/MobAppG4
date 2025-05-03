@@ -27,7 +27,8 @@ namespace MobAppG4.Views
 
                 await DisplayAlert("Success", $"Account created for {auth.User.Email}", "OK");
 
-                await Navigation.PushAsync(new LoginPage());
+                // Go back to login page after successful registration
+                await Navigation.PopAsync();
             }
             catch (Exception ex)
             {

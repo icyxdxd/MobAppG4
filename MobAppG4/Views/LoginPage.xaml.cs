@@ -20,7 +20,6 @@ public partial class LoginPage : ContentPage
             string token = await _authService.GetFreshToken(auth);
 
             await Navigation.PushAsync(new HomePage());
-
         }
         catch (Exception ex)
         {
@@ -32,5 +31,4 @@ public partial class LoginPage : ContentPage
     {
         await Navigation.PushAsync(new RegisterPage());
     }
-
 }
