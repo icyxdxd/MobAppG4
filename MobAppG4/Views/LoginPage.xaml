@@ -31,7 +31,7 @@
                 x:Name="emailEntry"
                 Placeholder="Email"
                 Keyboard="Email"
-                TextColor="#000"
+                TextColor="#00"
                 BackgroundColor="#F5F5F5"
                 HeightRequest="45" />
 
